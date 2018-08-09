@@ -12,10 +12,12 @@ object UserExample extends App {
     class UserRepository {
         def findUser(id: UUID): Future[Option[User]] = {
             // interact with database
-            Future.successful(Some(User(id, "harmeet@in", 100)))
+            println(s"User successfully found $id")
+            Future.successful(Some(User(id, "harmeet@knoldus.in", 100)))
         }
         def updateUser(user: User): Future[Unit] = {
             // interact with database and update the user
+            println(s"User updated successfully $user")
             Future.successful(())
         }
     }

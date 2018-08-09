@@ -8,7 +8,7 @@ import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration._
 import scala.concurrent.{Await, Future}
 
-class UserService[F[_]: Monad] { }
+class UserService { }
 
 /*object UserService extends App {
 
